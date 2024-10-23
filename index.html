@@ -1,0 +1,53 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.6.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      
+      <a-sky  color="black"></a-sky>
+
+      <a-assets>
+        <a-asset-item id="gato" src="model/gato.gltf"></a-asset-item>
+      </a-assets>
+      <a-entity gltf-model="model/gato.gltf" modify-materials="" scale="2 2 2" position="1.3695 2.25672 -12.82187" animation="dur: 1000; loop: true; property: rotation; to: 0 360 0" visible="" rotation="0 58.76100000000001 0"></a-entity>
+
+      <a-entity animation="property: rotation; to: 0 360 0; loop: true; dur: 20000">
+        
+        <a-sphere position="-4.91958 1.77933 -6.17378" color="white" material="src: #jupiter" animation="property: rotation; to: 0 360 0; loop: true; dur: 2 0000"></a-sphere>
+        <a-sphere position="1.46149 1.2597 -13.50529" color="white" material="src: #mercurio" animation="property: rotation; to: 0 0 360; loop: true; dur: 20000"></a-sphere>
+        <a-sphere position="4.95678 1.779 -6.174" color="white" material="src: url(model/saturno.jpg)" ></a-sphere>
+        <a-sphere position="-7.93251 1.2597 -24.46635" color="white" material="src: #tierra" animation="property: rotation; to: 0 0 360; loop: true; dur: 20000"></a-sphere>
+        <a-sphere position="8.7707 1.2597 -27.18152" color="#white" material="src: #venus"></a-sphere>
+        <a-sphere position="14.61339 10.28724 -29.80204" color="white" material="src: #urano" ></a-sphere>
+        <a-sphere position="-7.109 9.73054 -9.47729" color="white" material="src: #pluto" scale="3 3 3" animation="property: rotation; to: 360 0 0; loop: true; dur: 20000"></a-sphere>
+        <a-sphere position="15.47 10.29953 -12.61391" color="white" material="src: #nep" scale="3 3 3" animation="property: rotation; to: 0 360 0; loop: true; dur: 20000"></a-sphere>
+        <a-sphere position="  24.60408 10.3 7.1967" color="white" material="src: #planeta1" scale="3 3 3" animation="property: rotation; to: 0 360 0; loop: true; dur: 20000"></a-sphere>
+        <a-sphere position="2.04968 10.3 28.96271" color="white" material="src: #planeta2" scale="3 3 3"></a-sphere>
+        <a-sphere position="23.62341 10.3 35.02574" color="white" scale="3 3 3" material="src: #planeta3" animation="property: rotation; to: 0 360 0; loop: true; dur: 20000"></a-sphere>
+        <a-sphere position="-19.31254 13.70288 26.20764" color="white" scale="3 3 3" material="src: #planeta4"></a-sphere>
+        <a-sphere position="-20.58513 5.97907 -0.97678" color="white" scale="5 5 5" material="src: #planeta5" animation="property: rotation; to: 0 360 0; loop: true; dur: 20000"></a-sphere>
+        <a-sphere position="1.46149 8.69813 -40.88867" color="yellow" material= "src: #sol" scale="15 15 15" animation="property: rotation; to: 0 360 0; loop: true; dur: 20000"></a-sphere>
+    </a-entity>
+
+    <a-assets>
+      <img id="jupiter" src="model/jupiter.jpg" alt="">
+      <img id="mercurio" src="model/mercurio.jpg" alt="">
+      <img id="saturno" src="model/Saturno.jpg" alt="">
+      <img id="tierra" src="model/tierra.webp" alt="">
+      <img id="venus" src="model/venus.jpg" alt="">
+      <img id="urano" src="model/urano.jpg" alt="">
+      <img id="nep" src="model/neptuno.jpg" alt="">
+      <img id="pluto" src="model/pluto.jpg" alt="">
+      <img id="sol" src="model/sol.webp" alt="">
+
+      <img id="planeta1" src="model/planeta1.jpeg" alt="">
+      <img id="planeta2" src="model/planeta2.jpeg" alt="">
+      <img id="planeta3" src="model/planeta3.jpeg" alt="">
+      <img id="planeta4" src="model/planeta4.jpeg" alt="">
+      <img id="planeta5" src="model/planeta5.jpeg" alt="">
+    </a-assets>
+    
+  </a-scene>
+  </body>
+</html>
